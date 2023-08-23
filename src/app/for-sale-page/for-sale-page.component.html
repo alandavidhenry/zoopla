@@ -1,0 +1,85 @@
+  <!-- <div class="rounded-end-4 mt-4 me-5 box">
+    <img src="../../assets/img/Stocksy_comp_2741941.jpg" alt=""  class="box img-fluid rounded-end-4">
+  </div> -->
+
+<div class="container-fluid">
+
+  <div class="card mt-4" style="width: 28rem;">
+    <div class="card-body">
+      <h5 class="card-title">Properties for sale</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Search flats and houses for sale in the UK.</h6>
+
+      <form>
+
+        <div class="mb-3">
+          <label for="inputSearchArea" class="form-label">Search area</label>
+          <input class="form-control me-2" id="inputSearchArea" type="search" placeholder="e.g. Oxford or NW3" aria-label="Search">
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="inputMinBeds" class="form-label">Min beds</label>
+            <select id="inputMinBeds" class="form-select">
+              <option selected>Any beds</option>
+              <option>Studio+</option>
+              <option>1+</option>
+              <option>2+</option>
+              <option>3+</option>
+              <option>4+</option>
+              <option>5+</option>
+            </select>
+          </div>
+
+          <div class="col">
+            <label for="inputMaxPrice" class="form-label">Max Price</label>
+            <select id="inputMaxPrice" class="form-select">
+              <option selected>No max</option>
+              <option>£10,000</option>
+              <option>£20,000</option>
+              <option>£1,000,000</option>
+              <option>£2,000,000</option>
+              <option>£10,000,000</option>
+              <option>£15,000,000</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <p>Property type</p>
+          <div class="col-6">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="inputShowAll" id="inputShowAll" checked>
+              <label class="form-check-label" for="inputShowAll">
+                Show all
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inputFlats" id="inputFlats">
+              <label class="form-check-label" for="inputFlats">
+                Flats
+              </label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="inputHouses" id="inputHouses">
+              <label class="form-check-label" for="inputHouses">
+                Houses
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <button class="btn btn-primary d-flex align-items-center justify-content-center" type="submit" [routerLink]="['/for-sale-results']">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search me-2" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+          Search
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>

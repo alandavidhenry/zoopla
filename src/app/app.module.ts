@@ -5,19 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomePageSearchComponent } from './search/home-page-search.component';
-import { ForSaleSearchComponent } from './search/for-sale-search.component';
-import { ToRentSearchComponent } from './search/to-rent-search.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ForSalePageComponent } from './for-sale-page/for-sale-page.component';
+import { ToRentPageComponent } from './to-rent-page/to-rent-page.component';
+import { HousePricesPageComponent } from './house-prices-page/house-prices-page.component';
+import { ForSaleResultsComponent } from './results/for-sale-results.component';
+import { ToRentResultsComponent } from './results/to-rent-results.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    HomePageSearchComponent,
-    ForSaleSearchComponent,
-    ToRentSearchComponent,
-    HomePageComponent
+    HomePageComponent,
+    ForSalePageComponent,
+    ToRentPageComponent,
+    HousePricesPageComponent,
+    ForSaleResultsComponent,
+    ToRentResultsComponent
   ],
   imports: [
     BrowserModule,
